@@ -58,6 +58,10 @@ app.get("/image", (req, res) => {
   }
 });
 
+app.get('/test', (req, res) => {
+  res.json({message: 'Success'})
+})
+
 app.listen(PORT, () => console.log(`Server is started in the port ${PORT}`));
 
 function connectionHandler(ws, msg) {
